@@ -1,0 +1,73 @@
+
+
+.text-area {
+     /* -fx-background-color: black;
+       -fx-background-image: url("file:resources/сергей.jpg");
+       -fx-background-position: left;
+       -fx-background-repeat: no-repeat no-repeat;
+       -fx-background-size: contain
+     */   
+     
+     -fx-text-fill: white;
+     -fx-text-alignment: center, center, center, center;
+     -fx-background-color:  #ba2349; 
+  }
+   
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+  
+
+
+/* 
+   удаляем заголовки столбцов сотрудников и поздарделений
+   .column-header-background { visibility: hidden; -fx-padding: -1em; }
+    */ 
+  .column-header-background { visibility: hidden; -fx-padding: -1em; }
+  
+  
+  
+.table-row-cell {
+    -fx-background-color: #ba2349; 
+}
+
+
+
+.table-view *.scroll-bar{
+   -fx-background-color: #ba2349;
+}
+  
+
+
+.jfx-hamburger{
+    -fx-spacing: 7;  
+ }
+
+.jfx-hamburger StackPane{
+    -fx-background-color : #0fced9;
+    -fx-background-radius : 5px;
+}
+
+
+
+
+
+
+/* 
+.table-view *.scroll-bar:vertical *.increment-button,
+.table-view *.scroll-bar:vertical *.decrement-button,
+.table-view *.scroll-bar:vertical *.increment-arrow, 
+.table-view *.scroll-bar:vertical *.decrement-arrow {
+    -fx-background-color: #ba2349; 
+}
+
+  */ 

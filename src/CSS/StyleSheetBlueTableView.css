@@ -1,0 +1,24 @@
+
+  .column-header-background { visibility: hidden; -fx-padding: -1em; }
+  
+  
+  
+.table-row-cell {
+    -fx-background-color: #0fced9; 
+}
+
+
+
+.table-view *.scroll-bar{
+   -fx-background-color: #0fced9;
+}
+  
+.jfx-date-picker{
+   -jfx-default-color: #ba2349;   
+}
+
+.jfx-date-picker > .jfx-text-field { 
+ -jfx-unfocus-color: #ba2349; 
+ -fx-text-fill: #ba2349;
+ -fx-font: 18px "System";
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="722.0" style="-fx-background-color: #ba2349;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="turnstiles.ChoiceSubdivisionEmployeesController">
+   <children>
+      <HBox fx:id="HBoxReportType" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="719.0" spacing="12.0" style="-fx-background-color: transparent;">
+         <children>
+            <Circle fill="DODGERBLUE" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="reportTypeLabel" alignment="TOP_CENTER" contentDisplay="TOP" minHeight="13.0" minWidth="69" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: transparent; -fx-background-radius: 100PX;" text="Вид отчета" textFill="#0fced9" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="reportType" prefHeight="39.0" prefWidth="553.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/controlJFX.css" />
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="721.0" spacing="12.0" style="-fx-background-color: transparent;">
+         <children>
+            <Circle fill="DODGERBLUE" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="label12" alignment="TOP_CENTER" contentDisplay="TOP" minHeight="13.0" minWidth="69" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Период с:" textFill="#0fced9" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="dayS" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/controlJFX.css" />
+            <Label fx:id="label121" alignment="TOP_CENTER" contentDisplay="TOP" minHeight="13.0" minWidth="69" prefHeight="27.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-background-radius: 100PX;" text="Период по:" textFill="#0fced9" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="dayPo" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/controlJFX.css" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fx:id="HboxSubdivision" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="718.0" spacing="12.0" style="-fx-background-color: transparent;">
+         <children>
+            <Circle fill="DODGERBLUE" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+            <JFXListView fx:id="listSubdivision" onMouseClicked="#ClickedSubdivisionHandle" prefHeight="249.0" prefWidth="225.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/controlJFX.css" />
+            <JFXListView fx:id="listemployees" onMouseClicked="#ClickedEmployeesHandle" prefHeight="325.0" prefWidth="446.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/controlJFX.css" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Blue_Table_Based" pageWidth="842" pageHeight="840" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d4a1d5eb-82dd-412f-a620-202e4bdf9dba">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Transparent" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Transparent" forecolor="#B89F7D" backcolor="#70A9C6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Transparent" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="tableDataset" uuid="2d22511b-2213-4765-9aa0-73b6f76ec824">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="Period" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tekDay" class="java.lang.String"/>
+	<field name="fio" class="java.lang.String"/>
+	<field name="strWorkTime" class="java.lang.String"/>
+	<field name="workingHours" class="java.lang.String"/>
+	<field name="strTardiness" class="java.lang.String"/>
+	<field name="strRecast" class="java.lang.String"/>
+	<field name="strNotFinalized" class="java.lang.String"/>
+	<field name="strWorkTimeFileAbsenceEqual" class="java.lang.String"/>
+	<field name="absenceNotWorkingHours" class="java.lang.Integer"/>
+	<variable name="BoldFont" class="java.lang.Boolean"/>
+	<title>
+		<band height="40">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-21" width="840" height="61" backcolor="#0FCED9" uuid="6321f5e3-86eb-444f-acc1-8daaaa0d6c60"/>
+				<staticText>
+					<reportElement x="20" y="20" width="263" height="30" forecolor="#FFFFFF" uuid="9e48917a-7b59-4ffd-baad-725f45563194"/>
+					<textElement>
+						<font size="20" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Рабочее время за период:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="284" y="20" width="556" height="30" forecolor="#FFFFFF" uuid="2117e760-8318-4819-a678-d9982e027d6d"/>
+					<textElement textAlignment="Justified">
+						<font size="20" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Period}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="24">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="0" width="840" height="24" backcolor="#0FCED9" uuid="62a8b838-64ee-4728-8ad3-3e5f3aadc71c"/>
+				<staticText>
+					<reportElement x="306" y="2" width="100" height="22" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="bf9a61ab-4737-4642-b6e7-9ec420214686">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5226005-279f-49fb-a633-b7dedbffa104"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Норма времени]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="203" y="2" width="100" height="22" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="a5b6002c-3459-442d-858a-713ad3947205">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f8d4902-c56f-4657-bac4-23e9cd635629"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[День]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="18" y="2" width="182" height="22" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="c6206da1-c061-477e-b410-eb1f2e3e03b7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e4203d8a-a990-4988-a72a-b1f5d7352c92"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[ФИО]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="408" y="2" width="100" height="22" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="e3fa90c1-4fec-413d-a6cb-546243de8778">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5226005-279f-49fb-a633-b7dedbffa104"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Рабочее время]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="510" y="2" width="100" height="22" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="f9fd9d8d-f740-4cc4-8b68-268220d0bfdf">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5226005-279f-49fb-a633-b7dedbffa104"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Опоздание]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="612" y="2" width="100" height="22" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="d59246d0-9a7b-4cb6-bb63-ce8a93b517d6">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5226005-279f-49fb-a633-b7dedbffa104"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Переработка]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="714" y="2" width="100" height="22" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="251300be-84f5-4be4-96be-7132e997289c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5226005-279f-49fb-a633-b7dedbffa104"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Не отработано]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="1" width="840" height="26" backcolor="#0FCED9" uuid="b4600e50-d432-4b74-a363-3cabe73107a0"/>
+				<textField>
+					<reportElement x="203" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="c30d7f75-3479-4568-8d85-b482c11d821d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f8d4902-c56f-4657-bac4-23e9cd635629"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.FALSE:Boolean.TRUE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tekDay}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="408" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="f4d730b3-0d6d-4912-9687-7281b6497cc7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5226005-279f-49fb-a633-b7dedbffa104"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.FALSE:Boolean.TRUE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strWorkTime}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="408" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="e28e3973-fc4a-4ff1-87b9-8c22df0bea43">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5226005-279f-49fb-a633-b7dedbffa104"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strWorkTime}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="21" y="0" width="180" height="24" forecolor="#FFFFFF" uuid="cdd3f739-91de-46fc-bd52-2b33a5d0f6d6">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e4203d8a-a990-4988-a72a-b1f5d7352c92"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.FALSE:Boolean.TRUE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fio}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="21" y="0" width="180" height="24" forecolor="#FFFFFF" uuid="f27665d6-ba19-433e-b8d0-3b0d137346bc">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e4203d8a-a990-4988-a72a-b1f5d7352c92"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fio}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="306" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="270ab0b3-d4cb-43e5-a630-6d7e925a1630">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.FALSE:Boolean.TRUE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{workingHours}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="306" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="ba831502-9646-466d-a4c9-b6dec8c1fcfe">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{workingHours}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="510" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="b2f50ca9-859e-4b2e-b221-a702ee0309f4">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.FALSE:Boolean.TRUE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strTardiness}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="510" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="17a1ae4a-4337-46e5-b84e-4162ff3e3eeb">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strTardiness}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="612" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="5d989b6d-cd4e-4225-9696-f2da39441278">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.FALSE:Boolean.TRUE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strRecast}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="612" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="42eff296-13c1-4e8b-882e-0dc0a9987037">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strRecast}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="714" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="dbde6cb8-5562-4157-afa6-1df52bd5e6d3">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.FALSE:Boolean.TRUE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strNotFinalized}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="714" y="0" width="100" height="24" forecolor="#FFFFFF" uuid="98e07a46-8623-4a68-b9f5-bbda86c0f2a4">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82a01ca7-d00d-46bd-8a94-0b3cbd0a3d10"/>
+						<printWhenExpression><![CDATA[(($F{tekDay} =="") ? Boolean.TRUE:Boolean.FALSE)]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{strNotFinalized}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

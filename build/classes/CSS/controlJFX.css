@@ -1,0 +1,49 @@
+
+
+.jfx-date-picker{
+   -jfx-default-color: #0fced9;  
+}
+
+.jfx-date-picker > .jfx-text-field { 
+ -jfx-unfocus-color: #0fced9; 
+ -fx-text-fill:#0fced9;
+ -fx-font: 14px "System";
+}
+
+.jfx-time-picker{
+   -jfx-default-color: #0fced9;  
+}
+
+.jfx-time-picker > .jfx-text-field { 
+ -jfx-unfocus-color: #0fced9; 
+ -fx-text-fill: #0fced9;
+ -fx-font: 18px "System";
+}
+
+
+.jfx-combo-box {
+    -fx-text-fill:#0fced9;
+    -jfx-unfocus-color: #0fced9;
+    -jfx-focus-color: #0fced9;
+}
+
+
+.combo-box .cell{
+    -fx-text-fill: cyan;
+    -fx-font: 12px "System";
+    /* так как  jfx-combo-box унаследован от combo-box применяется по наследованию */ 
+}
+
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+     -fx-background-color: TRANSPARENT ; 
+}
+
+.list-view .list-cell:selected {
+  -fx-background-color: chartreuse;
+}
+
+.list-view .list-cell {
+-fx-background-color: TRANSPARENT ; 
+}
+

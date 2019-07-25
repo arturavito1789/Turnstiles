@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="turnstiles.ProgramsSetup">
+   <children>
+      <StackPane layoutX="10.0" layoutY="10.0" prefHeight="569.0" prefWidth="793.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="569.0" prefWidth="793.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 2em; -fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #ff3b49;" text="Параметры подключения" wrappingWidth="324.140625" />
+                  <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                     <children>
+                        <TextField fx:id="servername" promptText="servername" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <FontAwesomeIcon fill="#888888" iconName="LAPTOP">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                     <children>
+                        <TextField fx:id="port" promptText="port" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <FontAwesomeIcon fill="#888888" iconName="ROUBLE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="username" promptText="username" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <FontAwesomeIcon fill="#888888" iconName="USER">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                     <children>
+                        <PasswordField fx:id="password" promptText="password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                        <FontAwesomeIcon fill="#888888" iconName="KEY">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#LoginHandleAction" prefHeight="25.0" prefWidth="242.0" style="-fx-background-color: #ff3b49; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Применить параметры подключения">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox alignment="CENTER_RIGHT" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                     <children>
+                        <TextArea fx:id="errorMessageConnection" editable="false" onMouseClicked="#FontHandleAction" prefHeight="205.0" prefWidth="773.0" style="-fx-background-color: while; -fx-text-fill: black;" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font></TextArea>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+      <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="793.0">
+         <children>
+            <FontAwesomeIcon fx:id="font_to_curtail" fill="#0fced9" iconName="MINUS" onMouseClicked="#FontHandleAction" size="1.5em">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fx:id="font_close" fill="#0fced9" iconName="TIMES" onMouseClicked="#FontHandleAction" size="1.5em" wrappingWidth="20.142857551574707">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

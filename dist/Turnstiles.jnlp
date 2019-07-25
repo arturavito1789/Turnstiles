@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Turnstiles.jnlp">
+  <information>
+    <title>Turnstiles</title>
+    <vendor>Артур</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Turnstiles.jar" size="268008" download="eager" />
+    <jar href="lib\antlr-2.7.7.jar" size="445288" download="eager" />
+    <jar href="lib\byte-buddy-1.8.13.jar" size="2978629" download="eager" />
+    <jar href="lib\classmate-1.3.4.jar" size="65100" download="eager" />
+    <jar href="lib\commons-collections-3.2.jar" size="571259" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager" />
+    <jar href="lib\hibernate-commons-annotations-5.0.4.Final.jar" size="76233" download="eager" />
+    <jar href="lib\hibernate-core-5.3.3.Final.jar" size="6966759" download="eager" />
+    <jar href="lib\itext-2.1.7.jar" size="1130070" download="eager" />
+    <jar href="lib\jandex-2.0.5.Final.jar" size="187548" download="eager" />
+    <jar href="lib\jasper-compiler-jdt-5.5.9.jar" size="918743" download="eager" />
+    <jar href="lib\jasperreports-javaflow-6.7.0.jar" size="5537261" download="eager" />
+    <jar href="lib\javassist-3.23.1-GA.jar" size="770452" download="eager" />
+    <jar href="lib\javax.activation-api-1.2.0.jar" size="56674" download="eager" />
+    <jar href="lib\javax.persistence-api-2.2.jar" size="164556" download="eager" />
+    <jar href="lib\jboss-logging-3.3.2.Final.jar" size="66469" download="eager" />
+    <jar href="lib\jboss-transaction-api_1.2_spec-1.1.1.Final.jar" size="26290" download="eager" />
+    <jar href="lib\jfoenix-8.0.5.jar" size="2657082" download="eager" />
+    <jar href="lib\net.tascalate.javaflow.api-2.2.1.jar" size="22494" download="eager" />
+    <jar href="lib\org.apache.commons.beanutils.jar" size="201356" download="eager" />
+    <jar href="lib\poi-3.17.jar" size="2701171" download="eager" />
+    <jar href="lib\poi-excelant-3.17.jar" size="31218" download="eager" />
+    <jar href="lib\poi-ooxml-3.17.jar" size="1479023" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.17.jar" size="5924600" download="eager" />
+    <jar href="lib\poi-scratchpad-3.17.jar" size="1390360" download="eager" />
+    <jar href="lib\sqljdbc4-4.0.jar" size="584207" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Turnstiles" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="turnstiles.Turnstiles"  name="Turnstiles" />
+  <update check="always"/>
+</jnlp>
